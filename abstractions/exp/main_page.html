@@ -1,0 +1,701 @@
+
+<style type="text/css">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    background: #222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #000000;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.row:last-of-type {
+  margin-bottom: 0;
+}
+
+.bg {
+  background-color: #eeeeee;
+  padding: 40px 40px 40px 40px;
+}
+
+.grid {
+  box-shadow: 0 0 5px #e6e6e6;
+  background-color: #ffffff;
+  min-height: 50px;
+}
+
+#custom-bootstrap-menu {
+  margin-top: 40px;
+  margin-bottom: 0;
+  border-color: 0;
+}
+
+#custom-bootstrap-menu .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+
+#custom-bootstrap-menu {
+    font-size: 14px;
+    background-color: rgba(51, 51, 51, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+#custom-bootstrap-menu .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+  #custom-bootstrap-menu .navbar-nav > li > a.link1 {
+    border-top: 3px solid #e18728;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link1:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a.link1:focus {
+    color: #ffffff;
+    background-color: #e18728;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li.active > a.link1 {
+    color: #ffffff;
+    background-color: #e18728;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link2 {
+    border-top: 3px solid #BE4C39;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link2:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a.link2:focus {
+    color: #ffffff;
+    background-color: #BE4C39;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li.active > a.link2 {
+    color: #ffffff;
+    background-color: #BE4C39;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link3 {
+    border-top: 3px solid #9351A6;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link3:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a.link3:focus {
+    color: #ffffff;
+    background-color: #9351A6;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li.active > a.link3 {
+    color: #ffffff;
+    background-color: #9351A6;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link4 {
+    border-top: 3px solid #4472B9;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link4:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a.link4:focus {
+    color: #ffffff;
+    background-color: #4472B9;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li.active > a.link4 {
+    color: #ffffff;
+    background-color: #4472B9;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link5 {
+    border-top: 3px solid #4CA454;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link5:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a.link5:focus {
+    color: #ffffff;
+    background-color: #4CA454;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li.active > a.link5 {
+    color: #ffffff;
+    background-color: #4CA454;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link6 {
+    border-top: 3px solid #d49b00;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link6:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a.link6:focus {
+    color: #ffffff;
+    background-color: #d49b00;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li.active > a.link6 {
+    color: #ffffff;
+    background-color: #d49b00;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link7 {
+    border-top: 3px solid #444444;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li > a.link7:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a.link7:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  #custom-bootstrap-menu .navbar-nav > li.active > a.link7 {
+    color: #ffffff;
+    background-color: #444444;
+  }
+}
+
+#custom-bootstrap-menu .navbar-nav > li > a:hover,
+#custom-bootstrap-menu .navbar-nav> li > a:focus {
+    color: #5a5a5a;
+    transition: color 0.25s;
+}
+
+#custom-bootstrap-menu .navbar-nav>.active > a,
+#custom-bootstrap-menu .navbar-nav>.active > a:hover,
+#custom-bootstrap-menu .navbar-nav>.active > a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+
+#custom-bootstrap-menu .navbar-toggle {
+    border-color: #ddd;
+}
+
+#custom-bootstrap-menu .navbar-toggle {
+  border: none;
+  background-color: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+#custom-bootstrap-menu .navbar-toggle i {
+  color: #ffffff;
+}
+
+#custom-bootstrap-menu .navbar-toggle:hover,
+#custom-bootstrap-menu .navbar-toggle:focus {
+    background: none;
+}
+
+#custom-bootstrap-menu .navbar-nav > .open > a,
+#custom-bootstrap-menu .navbar-nav > .open > a:hover,
+#custom-bootstrap-menu .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #262626;
+}
+
+@media (max-width: 767px) {
+
+  #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > li > a:before {
+    content: "\f101";
+    font-size: 14px;
+    font-family: FontAwesome;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: margin ease 0.5s;
+  }
+  
+  #custom-bootstrap-menu .navbar-nav > li > a:hover,
+  #custom-bootstrap-menu .navbar-nav > li > a:focus {
+      background-color: #404040;
+      color: #ffffff;
+    }
+
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > li > a {
+      margin-top: 0;
+      background-color: #404040;
+      color: #777;
+    }
+
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > li > a:hover,
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #ffffff;
+      background-color: transparent;
+    }
+
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > .active > a,
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > .active > a:hover,
+  #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > .active > a:focus {
+      color: #555;
+      background-color: #404040;
+    }
+
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > .disabled > a,
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    #custom-bootstrap-menu .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+      color: #ccc;
+      background-color: transparent;
+    }
+}
+
+.btn {
+  border: 0;
+}
+
+.btn-default {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.btn-default:hover {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+
+.btn-primary {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #1199aa;
+}
+
+.btn-primary:hover {
+  background-color: #13aec1;
+  color: #ffffff;
+}
+
+.btn-success {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #77cc22;
+}
+
+.btn-success:hover {
+  background-color: #84dc2c;
+  color: #ffffff;
+}
+
+.btn-info {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #8899ee;
+}
+
+.btn-info:hover {
+  background-color: #9eacf1;
+  color: #ffffff;
+}
+
+.btn-warning {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #ee8822;
+}
+
+.btn-warning:hover {
+  background-color: #f0953a;
+  color: #ffffff;
+}
+
+.btn-danger {
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #dd5544;
+}
+
+.btn-danger:hover {
+  background-color: #e1695a;
+  color: #ffffff;
+}
+
+.panel {
+  border: none;
+  border-radius: 0;
+}
+
+.panel-body {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.panel-default > .panel-heading {
+  border-radius: 0;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.panel-primary > .panel-heading {
+  border-radius: 0;
+  background-color: #19a;
+  color: #ffffff;
+}
+
+.panel-success > .panel-heading {
+  border-radius: 0;
+  background-color: #7c2;
+  color: #ffffff;
+}
+
+.panel-info > .panel-heading {
+  border-radius: 0;
+  background-color: #89e;
+  color: #ffffff;
+}
+
+.panel-warning > .panel-heading {
+  border-radius: 0;
+  background-color: #e82;
+  color: #ffffff;
+}
+
+.panel-danger > .panel-heading {
+  border-radius: 0;
+  background-color: #d54;
+  color: #ffffff;
+}
+
+.alert {
+  border: 0;
+}
+
+.alert-success {
+  color: #ffffff;
+  background-color: #7c2;
+}
+
+.alert-info {
+  color: #ffffff;
+  background-color: #89e;
+}
+
+.alert-warning {
+  color: #ffffff;
+  background-color: #e82;
+}
+
+.alert-danger {
+  color: #ffffff;
+  background-color: #d54;
+}
+
+
+
+</style>
+
+
+<div class="container">
+  <div id="custom-bootstrap-menu" class="navbar" role="navigation">
+      <div class="navbar-header">
+        <div class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+        <i class="fa fa-indent" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse navbar-menubuilder">
+          <ul class="nav navbar-nav navbar-left">
+        <li><a href="#" target="_blank" class="link1">Blog</a></li>
+        <li><a href="#" target="_blank" class="link2">Videos</a></li>
+        <li class="active"><a href="#" target="_blank" class="link3">Frameworks</a></li>
+        <li><a href="#" target="_blank" class="link4">Snippets</a></li>
+        <li><a href="#" class="link5">Login</a></li>
+        <li><a href="#" class="link6">Register</a></li>
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle link7" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="bg">
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>Grid</h2>
+      </div>
+    </div>  
+
+    <div class="row">
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-11 col-md-11 col-sm-11 col-xs-12"><div class="grid"></div></div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="grid"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>Alerts With Dismissible</h2>
+      </div>
+    </div>  
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        Alert Success
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-info">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        Alert Info
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        Alert Warning
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        Alert Danger
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>Alerts</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-success">Alert Success</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-info">Alert Info</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-warning">Alert Warning</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="alert alert-danger">Alert Danger</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>Buttons</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+        <button type="button" class="btn btn-lg btn-default">Default</button>
+        <button type="button" class="btn btn-lg btn-primary">Primary</button>
+        <button type="button" class="btn btn-lg btn-success">Success</button>
+        <button type="button" class="btn btn-lg btn-info">Info</button>
+        <button type="button" class="btn btn-lg btn-warning">Warning</button>
+        <button type="button" class="btn btn-lg btn-danger">Danger</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+        <button type="button" class="btn btn-md btn-default">Default</button>
+        <button type="button" class="btn btn-md btn-primary">Primary</button>
+        <button type="button" class="btn btn-md btn-success">Success</button>
+        <button type="button" class="btn btn-md btn-info">Info</button>
+        <button type="button" class="btn btn-md btn-warning">Warning</button>
+        <button type="button" class="btn btn-md btn-danger">Danger</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+        <button type="button" class="btn btn-sm btn-default">Default</button>
+        <button type="button" class="btn btn-sm btn-primary">Primary</button>
+        <button type="button" class="btn btn-sm btn-success">Success</button>
+        <button type="button" class="btn btn-sm btn-info">Info</button>
+        <button type="button" class="btn btn-sm btn-warning">Warning</button>
+        <button type="button" class="btn btn-sm btn-danger">Danger</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h2>Panels</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h1 class="panel-title">Default</h1></div>
+          <div class="panel-body">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><h1 class="panel-title">Primary</h1></div>
+          <div class="panel-body">
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <div class="panel panel-success">
+          <div class="panel-heading"><h1 class="panel-title">Success</h1></div>
+          <div class="panel-body">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="panel panel-warning">
+          <div class="panel-heading"><h1 class="panel-title">Warning</h1></div>
+          <div class="panel-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="panel panel-danger">
+          <div class="panel-heading"><h1 class="panel-title">Danger</h1></div>
+          <div class="panel-body">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-info">
+          <div class="panel-heading"><h1 class="panel-title">Info</h1></div>
+          <div class="panel-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  
+ $( document ).ready(function() {
+    $(".navbar-toggle").click(function(){
+        $(".fa").toggleClass("fa-indent fa-outdent");
+    });
+});  
+</script>
